@@ -138,7 +138,7 @@ char *concatenate_strings(char *dest, char *src);
 
 /* toem_string.c */
 char *copy_string(char *destination, char *source);
-char *duplicate_string(const char *str).;
+*string(const char *str);
 void print_string(char *str);
 int print_char(char c);
 
@@ -163,11 +163,10 @@ void *reallocate_memory(void *old_ptr, unsigned int old_size, unsigned int new_s
 int free_and_nullify(void **pointer);
 
 /* toem_atoi.c */
-int print_env(info_t *shell_info);
-char *get_env_var(info_t *shell_info, congcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hshst char *var_name);
-int set_env_var(info_t *shell_info);
-int unset_env_var(info_t *shell_info);
-int fill_env_list(info_t *shell_info);
+int check_interactive(info_t *shell_info);
+int check_delim(char char_to_check, char *delim_string);
+int check_alpha(int char_input);
+int convert_to_int(char *str_input);
 
 /* toem_errors1.c */
 int convert_str_to_int(char *str);
@@ -204,7 +203,7 @@ void release_info(info_t *info, int all);
 /* toem_environ.c */
 int print_env(info_t *shell_info);
 char *get_env_var(info_t *shell_info, const char *var_name);
-int set_env_var(info_t *shell_info);
+int set_env_(info_t *shell_info);
 int unset_env_var(info_t *shell_info);
 int fill_env_list(info_t *shell_info);
 

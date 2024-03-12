@@ -34,12 +34,12 @@ char *get_env_var(info_t *shell_info, const char *var_name)
 }
 
 /**
- * set_env_var - Initialize a new environment variable,
+ * set_env_ - Initialize a new environment variable,
  *               or modify an existing one
  * @shell_info: Pointer to struct containing shell info
  * Return: Always 0
  */
-int set_env_var(info_t *shell_info)
+int set_env_(info_t *shell_info)
 {
 	if (shell_info->argc != 3)
 	{

@@ -1,4 +1,4 @@
-#include "shell.h"
+"shell.h"
 
 /**
  * copy_string - copies a string
@@ -7,7 +7,7 @@
  *
  * Return: pointer to destination
  */
-char *copy_string(char *destination, char *source)
+char *copy_string(char *string, char *source)
 {
 	int i = 0;
 
